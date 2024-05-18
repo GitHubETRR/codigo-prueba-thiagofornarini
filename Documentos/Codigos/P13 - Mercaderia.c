@@ -9,7 +9,7 @@ int main(void)
     scanf("%f, \n", &mercaderia );
     scanf("%f", &precio );
     float total = mercaderia * precio ;
-    printf("El total a pagar es: %f", total)
+    printf("El total a pagar es: %f", total);
 
 
 }
