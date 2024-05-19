@@ -10,7 +10,7 @@ int main(void){
         do{
         printf("El angulo ingresado no es valido, porfavor ingrese uno que lo sea");
         scanf ("%f", &angulo1);
-    } while ((angulo1<=0) == true);
+    } while (angulo1<= 0 || angulo1>= 180);
     }
     return 0;
 }
