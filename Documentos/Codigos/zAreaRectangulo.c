@@ -12,5 +12,4 @@ int main(void)
     float area= base*height;
     printf("El area de su cuadrado es: %f", area);
     return 0;
-    
 }
