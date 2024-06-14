@@ -7,7 +7,4 @@ int main(void){
     int Pies=Cm*0.0328;
     float PulgadaRestante=(Cm*0.394)-(Pies*12);
     printf("Su equivalente en pies y pulgadas es %d'%f",Pies,PulgadaRestante);
-    
-    
-
 }
