@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+void Bienvenida (void);
+char Menu (float[]);
+float Suma (float[]);
+float Resta (float[]);
+float Division (float[]);
+float Multiplicacion (float[]);
+
+int main (){
+    int num[2];
+}
+
+
+void Bienvenida (void){
+    printf("Bienvenido a la calculadora de Thiago Fornarini!\n");
+}
+
+float Suma (float num[]){
+    float suma;
+    suma=num[0]+num[1];
+    printf("El resultado de la SUMA es: %f \n",suma);
+}
+
+float Resta (float num[]){
+    float resta;
+    resta=num[0]-num[1];
+    printf("El resultado de la Resta es: %f")
+}
