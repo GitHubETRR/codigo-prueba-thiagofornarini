@@ -1,0 +1,12 @@
+/*22.	Desarrollar un algoritmo que permita leer un valor que represente una temperatura expresada en grados
+Celsius y convierta dicho valor en un valor expresado en grados Fahrenheit.*/
+
+#include <stdio.h>
+
+int main (){
+    float gC,gF;
+    printf("Porfaor ingrese la temperatura deseada en C°:\n");
+    scanf("%f", &gC);
+    gF=gC*9/5+32;
+    printf("Su temperatura de salida en F° es %f", gF);
+}
