@@ -9,6 +9,25 @@ float Multiplicacion (float[]);
 
 int main (){
     int num[2];
+    Bienvenida();
+    printf("Porfavor ingrese el primer numero a operar\n");
+    scanf("%i",&num[0]);
+    printf("Porfavor ingrese el segundo numero a operar\n");
+    sncaf("%i",&num[1]);
+    switch(Var){
+        case 0: printf("");
+            break;
+        case 1: printf("");
+            break;
+        case 2: printf("");
+            break;
+        case 3: printf("");
+            break;
+        case 3: printf("");
+            break;
+        default:printf("Ingrese un valor correcto");
+            break;
+
 }
 
 
