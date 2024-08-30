@@ -7,8 +7,6 @@
 int main(){
     int matriz[N][N];
     int valormax = 0;
-    int filamax = 0;
-    int colmax = 0;
     int contador = 0;
     srand(time(NULL));
     for (int i = 0; i < N; i++) {
