@@ -1,0 +1,68 @@
+#include <stdio.h>
+
+void Bienvenida(void);
+
+void Suma(float[]);
+
+void Resta(float[]);
+
+void Division(float[]);
+
+void Multiplicacion(float[]);
+
+int main (){
+    float num[2];
+    int var;
+    Bienvenida();
+    printf("Porfavor ingrese el primer numero a operar\n");
+    scanf("%f",&num[0]);
+    printf("Porfavor ingrese el segundo numero a operar\n");
+    scanf("%f",&num[1]);
+    printf("Ingrese 0 si los quiere sumar, 1 si los quiere restar (1-2), 2 si los quiere divir (1/2), 3 si los quiere multiplicar \n");
+    scanf("%d",&var);
+    switch(var){
+        case 0:
+            Suma(num);
+            break;
+        case 1:
+            Resta(num);
+            break;
+        case 2:
+            Division(num);
+            break;
+        case 3:
+            Multiplicacion(num);
+            break;
+        default:printf("Ingrese un valor correcto");
+            break;
+    }
+}
+
+void Bienvenida(void){
+    printf("Bienvenido a la calculadora de Thiago Fornarini!\n");
+}
+
+void Suma(float num[]){
+    float suma;
+    suma=num[0]+num[1];
+    printf("El resultado de la suma es: %f \n",suma);
+}
+
+void Resta(float num[]){
+    float resta;
+    resta=num[0]-num[1];
+    printf("El resultado de la resta es: %f \n",resta);
+
+}
+
+void Division(float num[]){
+    float divi;
+    divi=num[0]/num[1];
+    printf("El resultado de la division es: %f \n",divi);
+}
+
+void Multiplicacion(float num[]){
+    float mult;
+    mult=num[0]*num[1];
+    printf("El resultado de la multiplicacion es: %f \n",mult);
+}

@@ -1,0 +1,40 @@
+#include <stdio.h>
+#define N 2
+
+void pedir(int matriz[N][N]);
+void mostrar(int matriz[N][N]);
+
+int main(){
+    
+    
+    int matriz [N][N];
+    pedir(matriz);
+    mostrar(matriz);
+}
+
+void pedir(int matriz[N][N]){
+    for(int i=0;i<N;i++){
+        for(int j=0;j<N;j++){
+            printf("Ingrese el valor que le asigna a esta posicion en la matriz:\n");
+            scanf("%d", &matriz[i][j]);
+        }
+    }
+}
+
+void mostrar(int matriz[N][N]){
+    int mayor=0;
+    for(int i=0;i<N;i++){
+        printf("\n");
+        for(int j=0;j<N;j++){
+            printf("%d-",matriz[i][j]);
+        }
+    }
+    for(int i=0;i<N;i++){
+        for(int j=0;j<N;j++){
+            if(matriz[i][j]>mayor){
+                mayor=matriz[i][j];
+            }
+        }
+    }
+    printf("El mayor valor dentro de la matriz es %d",mayor);
+}

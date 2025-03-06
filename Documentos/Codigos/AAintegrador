@@ -1,0 +1,50 @@
+#include <stdio.h>
+#define MAX_CHAR 50
+
+typedef struct{
+    char nombre[MAX_CHAR];
+    int edad[2];
+    int salario[10];
+}Empleado_t;
+
+Empleado_t info_empleado[5];
+
+void ingresarDatos(void);
+void procesarDatos(Empleado_t ingresarDatos[5]);
+void mostrarDatos(Empleado_t ingresarDatos[5]);
+void menu();
+
+int main(){
+    int i;
+    ingresarDatos();
+    procesarDatos();
+}
+
+void ingresarDatos(){
+    int salida;
+    printf("\nBienvenido al programa, deberá ingresar los datos de los empleados que desee (max 5)\n");
+    for(i=0;i<5;i++){
+            printf("Empleado %d",i+1);
+            printf("\nNombre:\n");
+            scanf("%s",info_empleado[i].nombre);
+            printf("Edad:\n");
+            scanf("%d",info_empleado[i].edad);
+            printf("Salario:\n");
+            scanf("%d",info_empleado[i].salario);
+            printf("\n¿Desea añadir otro empleado? si-(1)  no-(2)\n");
+            scanf("%d",&salida);
+            if(salida==2){
+                break;
+            }
+            }
+        }
+
+void procesarDatos(Empleado_t ingresarDatos[5]){
+    if(i==0){
+        printf("No hay empleados regristrados");
+    
+    for(i=0;i<5;i++){
+        
+    }
+    }
+}

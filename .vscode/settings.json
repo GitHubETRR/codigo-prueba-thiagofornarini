@@ -1,0 +1,6 @@
+{
+    "cmake.configureOnOpen": false,
+    "http.proxy": "http://proxy.server:port",
+    "https.proxy": "https://proxy.server:port",
+    "http.proxyStrictSSL": false
+}
