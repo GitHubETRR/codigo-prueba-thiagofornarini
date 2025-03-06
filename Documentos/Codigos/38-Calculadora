@@ -1,9 +1,13 @@
 #include <stdio.h>
 
 void Bienvenida(void);
+
 void Suma(float[]);
+
 void Resta(float[]);
+
 void Division(float[]);
+
 void Multiplicacion(float[]);
 
 int main (){
