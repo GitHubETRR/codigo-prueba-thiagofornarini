@@ -32,7 +32,7 @@ void Registrar(registro_t listaAlumnos[]){
         printf("Ingrese el nombre:\n");
         scanf("%s", listaAlumnos[i].Nombre);
         printf("Ingrese el apellido:\n");
-        scanf("%s", listaAlumnos[i].Apellido);
+        scanf("%s",     listaAlumnos[i].Apellido);
         printf("Ingrese el DNI:\n");
         scanf("%d", listaAlumnos[i].DNI);
         getchar();
