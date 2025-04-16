@@ -1,0 +1,56 @@
+//Código de escuela que registre, nombre, apellido, dni, domicilio,
+// curso, preceptor, a partir de la siguiente estructura
+//  typedef struct{
+//      char nombre_del_curso[]
+//      resgistro_t alumnos[32]
+//  }curso_t;
+//
+#include <stdio.h>
+#define MAX_CHAR 50
+#define MAX_ALUMN 32
+
+typedef struct{
+    char Nombre[MAX_CHAR];
+    char Apellido[MAX_CHAR];
+    int DNI[MAX_CHAR];
+    char Domicilio[MAX_CHAR];
+    char Curso[MAX_CHAR];
+    char Preceptor[MAX_CHAR];
+}registro_t;
+
+void Registrar(registro_t listaAlumnos[]);
+
+int main(){
+    registro_t listaAlumnos[MAX_ALUMN];
+    Registrar(listaAlumnos);
+}
+
+void Registrar(registro_t listaAlumnos[]){
+    int salir;
+    for(int i=0; i<MAX_ALUMN; i++){
+        printf("\nPorfavor, registre al alumno %d \n", i+1);
+        printf("Ingrese el nombre:\n");
+        scanf("%s", listaAlumnos[i].Nombre);
+        printf("Ingrese el apellido:\n");
+        scanf("%s",     listaAlumnos[i].Apellido);
+        printf("Ingrese el DNI:\n");
+        scanf("%d", listaAlumnos[i].DNI);
+        getchar();
+        printf("Ingrese el domicilio:\n");
+        scanf("%s", listaAlumnos[i].Domicilio);
+        printf("Ingrese el curso:\n");
+        scanf("%s", listaAlumnos[i].Curso);
+        printf("Ingrese el preceptor:\n");
+        scanf("%s", listaAlumnos[i].Preceptor);
+        printf ("¿Desea registrar otro alumno?\n 1(si)- 2(no)\n");
+        scanf("%d",&salir);
+        if(salir==2){
+            break;
+        }
+        if(i==32){
+            printf("No se puede ingresar más alumnos");
+        }
+        
+    }
+
+}
