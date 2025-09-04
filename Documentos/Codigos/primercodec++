@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+
+class Persona{
+private:
+    std::string nombre;
+    int edad;
+
+public:
+    Persona(std::string nom, int e){
+        nombre = nom;
+        edad = e;
+    }
+
+    void mostrar(){
+        std::cout << "Nombre: " << nombre << std::endl;
+        std::cout << "Edad  : " << edad << std::endl;
+    }
+};
+
+int main(){
+    Persona p1("Thiago", 17);
+    p1.mostrar();
+
+    Persona p2("Agustin", 18);
+    p2.mostrar();
+
+    return 0;
+}
