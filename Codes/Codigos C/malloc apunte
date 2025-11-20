@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int *p=NULL;
+    p=(int *) malloc (sizeof(int)); //caloc en vez de malloc, sirve para no multiplicar, ej: Pido 5 int, pongo directamente int,5     
+    if(p==NULL){ //calloc (sizeof(int),5) malloc: (5*sizeof(int))
+        printf("No hay mas memoria\n");
+        exi(-1);
+    }else{
+        *p=54;
+        printf("El contenido de P es: %d", *p);
+        free(p);
+    }
+    return 0;
+}
