@@ -58,13 +58,12 @@ int main(){
     vector<Campeon*> equipo;
     int opcion;
     string nombre;
-    cin.ignore(); // Limpia el buffer antes de usar getline
+    cin.ignore();
 
     do{
         mostrarMenu();
         cin >> opcion;
-        cin.ignore(); // Limpia buffer antes de leer el nombre
-
+        cin.ignore();
         switch(opcion){
             case 1:
                 cout << "Nombre del Top: ";
@@ -106,3 +105,4 @@ int main(){
     for(Campeon* c : equipo) delete c;
     return 0;
 }
+
